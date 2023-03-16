@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: inter, sans-serif;
 }
 /* navbar section start  */
 .nav_topSection{
@@ -23,7 +26,13 @@
 }
 .img_cnt{
     width: 11%;
+    margin-left: 1rem;
+}
+.img_cnt>img{
     border-right: 1.5px solid gray;
+}
+.imgStyl{
+    padding-right: 1rem;
 }
 .address_location{
     position: absolute;
@@ -46,9 +55,12 @@
    border: 1px solid rgb(177, 171, 171);
    padding: 5px;
    border-radius: 30px;
+   /*  I have to display this only when I scroll the page */
+   display: none; 
 }
 .searchInNavbar>input{
     border: none;
+    outline: none;
     padding: 5px;
 }
 .searchInNavbar>button{
@@ -88,6 +100,271 @@
     border: none;
     cursor: pointer;
 }
+.address_location_bttm{
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid grey;
+    display: none;
+}
+.address_location_bttm>p{
+    padding-left: 15px;
+}
+.address_location_bttm>select{
+    margin-left: 10px;
+    border: none;
+    font-weight: 600;
+}
 /* navbar section end */
 
+/* search section start */
+.searchBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    padding: 32px;
+    /* box-shadow: inset 10px 10px 100px coral; */
+    
+}
+.wrapperSearch{
+    width: 60%;
+}
+.searchText{
+    margin: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+}
+.hd1_srch>h3{
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+.searchBarInput {
+    width: 100%;
+    /* border: 1px solid #333; */
+    border-radius: 20px;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    border: 0.5px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.fa-magnifying-glass {
+    padding: 10px 10px 10px 20px;
+}
+.searchBarInput input {
+    width: 90%;
+    border: none;
+    outline: none;
+}
+.linkToUpdate>a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #10847E;
+}
+.linkToUpdate>a:hover{
+    color: #0e5652;
+}
+.searchBarInput button {
+    padding: 5px 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border-radius: 20px;
+    background-color: #14847e;
+    border: none;
+    color: white;
+}
+.searchBarInput button:hover{
+    background-color: #0e5652;
+    cursor: pointer;
+}
+.bodyContents {
+    max-width: 1440px;
+    margin: auto;
+}
+.prescriptionSearch_bttm{
+    text-align: center;
+    background-color: #EBF8F3;
+    padding: 5px;
+    display: none;
+}
+/* search section end */
+
+/* Category section start */
+.ctgrySection {
+    display: flex;
+    justify-content: center;
+}
+.ctgryWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin: 0 10px;
+}
+.ctgryWrapper::-webkit-scrollbar {
+    display: none;
+}
+.ctrgryItems {
+    border-radius: 15px;
+    margin: 10px;
+    padding: 12px;
+    max-width: 130px;
+}
+.ctrgryItems:hover{
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.ctrgryItems>img{
+    border-bottom: 0.5px solid rgb(209, 203, 203);
+    max-width: 130px;
+    border-radius: 7px;
+}
+.ctrgryItems>div{
+    text-align: center;
+}
+.ctrgryItems>div>h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(30, 29, 29);
+    line-height: 30px;
+}
+.ctrgryItems>div>p{
+    font-size: 12px;
+    font-weight: 600;
+    color: #F47779;
+}
+/* Category section end */
+
+/* Advertisment section start */
+.advertismentSection{
+    display: flex;
+    justify-content: center;
+}
+.advrtsmntWrapper{
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin: 30px 0;
+    gap: 20px;
+}
+.advrtsmntItems{
+    width: 33%;
+}
+.advrtsmntItems>img{
+    width: 100%;
+    border-radius: 15px;
+}
+.advrtsmntWrapper::-webkit-scrollbar{
+    display: none;
+}
+/* Advertisment section end */
+
+
+.labContainerBox{
+    margin-top: 2rem;
+}
+.labText>h3{
+    line-height: 3rem;
+    font-size: 26px;
+}
+.labText>div{
+    display: flex;
+    align-items: center;
+}
+.labText>div>img{
+    width: 100px;
+    padding-left: 10px;
+}
+.variousTestSection{
+    display: flex;
+    justify-content: center;
+}
+.testWrapper{
+    display: flex;
+    overflow-x: scroll;
+    margin: 20px 0;
+    gap: 20px;
+}
+.testWrapper::-webkit-scrollbar{
+    display: none;
+}
+.labTestItems>img{
+    max-width: 150px;
+}
+
+
+
+
 /* Media Query */
+@media screen and (max-width: 1277px) {
+    .many_options>p>span{
+        display: none;
+    }
+}
+@media screen and (max-width: 1020px) {
+    .proLog{
+        display: none;
+    }
+    .many_options>button{
+        display: none;
+    }
+    .address_location{
+        display: none;
+    }
+    .many_options>p>span{
+        display: contents;
+    }
+    .many_options{
+        width: 20%;
+    }
+    .prescriptionSearch_bttm{
+        display: block;
+    }
+    .ctgryMedecine{
+        background-color: #E1FFEE;
+    }
+    .ctgryLabTest{
+        background-color: #ECF0FF;
+    }
+    .ctgryHealthCare{
+        background-color: #F5FAD5;
+    }
+    .ctgrySysrgeries{
+        background-color: #A6DDDB;
+    }
+    .ctgryHealthBlogs{
+        background-color: #FFF5D9;
+    }
+    .ctgryPlus{
+        background-color: #FFEFEF;
+    }
+    .ctgryOffers{
+        background-color: #FCF8D8;
+    }
+    .ctgryValueStore{
+        background-color: #F3D7AC;
+    }
+}
+@media screen and (max-width: 1055px) {
+    .prescriptionSearch{
+        display: none;
+    }
+    .searchText{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 705px) {
+    .many_options>p>span{
+        display: none;
+    }
+}
+@media screen and (max-width: 1028px) {
+    .listVariety{
+        display: none;
+    }
+    .address_location_bttm{
+        display: flex;
+    }
+}

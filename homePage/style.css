@@ -6,6 +6,11 @@
     font-family: inter, sans-serif;
 }
 /* navbar section start  */
+.navParentDiv{
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
 .nav_topSection{
     display: flex;
     padding-left: 15px;
@@ -72,6 +77,9 @@
 }
 .searchInNavbar>button:hover{
     background-color: #0e5652;
+    cursor: pointer;
+}
+.many_options{
     cursor: pointer;
 }
 .many_options>button{
@@ -610,6 +618,107 @@
 }
 /*footer section end*/
 
+/*concern section start*/
+.concernParentDiv{
+    margin: 3rem 0;
+}
+.concernParentDiv>h4{
+    font-size: 27px;
+}
+.concernParentDiv>p{
+    line-height: 3rem;
+}
+.concernWrapperImg{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgConatiner{
+    margin: 0 40px 0 0;
+    text-align: center;
+    width: 130px;
+}
+.imgConatiner>div>img{
+    width: 130px;
+    border-radius: 70%;
+}
+.imgConatiner>div>img:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+}
+.imgConatiner img{
+    width: 100%;
+}
+.imgConatiner p{
+    padding-top: 15px;
+    font-weight: 600;
+}
+/*concern section end*/
+
+/*Lab booking section start*/
+.labBookParent{
+    margin: 4rem 0;
+}
+.labBookParent>h3{
+    font-size: 27px;
+}
+.difflabConatiner{
+    display: flex;
+    margin: 2rem 0;
+}
+.singleLab{
+    width: 80%;
+    border-radius: 7px;
+    padding: 20px;
+    position: relative;
+    margin-right: 20px;
+    background-color: #F1FAFE;
+}
+.singleLab:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.singleLab>p{
+    background-color: #F47779;
+    padding: 8px 0px;
+    cursor: pointer;
+    border: 2px solid;
+    width: 80px;
+    color: white;
+    text-align: center;
+    border-radius: 7px;
+    font-weight: 600;
+}
+.singleLab>h4{
+    margin: 1rem 0;
+    font-size: 17px;
+    color: rgb(53, 53, 53);
+}
+.singleLab>h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(53, 53, 53);
+}
+.pricWithImg{
+    display: flex;
+    align-items: center;
+    margin: 3rem 0 0 0;
+    justify-content: space-between;
+}
+.prc>p{
+    text-decoration: line-through;
+}
+.prcImg{
+    width: 100px;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+}
+.prcImg img{
+    width: 100%;
+}
+
+/*Lab booking section end*/
+
 
 
 /* Media Query */
@@ -710,5 +819,10 @@
     }
     .viewAllCategory{
         display: block;
+    }
+    .difflabConatiner{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }

@@ -50,7 +50,5 @@ function addto_Cart(){
     localStorage.setItem("cart-list",JSON.stringify(cartArr))
     console.log(item[0])
     alert("Added successfully")
-    }else{
-        alert("Please Login for add to cart")
-    }
+}
 }

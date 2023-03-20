@@ -11,41 +11,44 @@
 <body>
 
     <!-- navbar section start -->
-    <div class="nav_topSection">
-        <div class="img_cnt">
-            <img class="imgStyl" src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0" alt="">
+    <div class="navParentDiv">
+        <div class="nav_topSection">
+            <div class="img_cnt">
+                <img class="imgStyl" src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0" alt="">
+            </div>
+            <div class="address_location">
+                <p> <span><i style="color: orange;" class="fa-solid fa-bolt-lightning"></i> &nbsp; </span> Express delivery to</p>
+                <select name="" id="location_add">
+                    <option value="">400001 Mumbai</option>
+                </select>
+            </div>
+            <div class="searchInNavbar">
+                <span>&nbsp;&nbsp;<i class="fa-solid fa-magnifying-glass"></i></span>  <input type="text" placeholder="search for Medicines..">
+                <button>search</button>
+            </div>
+            <div class="many_options">
+                <button><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp; <span>Download App</span> </button>
+                <p class="proLog" onclick="window.location.href ='../loginpage.html'"><i class="fa-regular fa-user" ></i>&nbsp;&nbsp; <span> Hello, Log in </span></p> </p>
+                <p><i class="fa-sharp fa-solid fa-tag"></i>&nbsp;&nbsp; <span>Offers</span> </p>
+                <p onclick="window.location.href ='../Cart.html'"><i class="fa-solid fa-cart-plus"></i>&nbsp;&nbsp; <span>Cart  </span> </p>
+            </div>
         </div>
-        <div class="address_location">
-            <p> <span><i style="color: orange;" class="fa-solid fa-bolt-lightning"></i> &nbsp; </span> Express delivery to</p>
-            <select name="" id="location_add">
-                <option value="">400001 Mumbai</option>
-            </select>
-        </div>
-        <div class="searchInNavbar">
-            <span>&nbsp;&nbsp;<i class="fa-solid fa-magnifying-glass"></i></span>  <input type="text" placeholder="search for Medicines..">
-            <button>search</button>
-        </div>
-        <div class="many_options">
-            <button><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp; <span>Download App</span> </button>
-            <button><p class="proLog"><i class="fa-regular fa-user"></i>&nbsp;&nbsp; <span> Hello, Log in  <a href= "../loginpage.html"></button></span></a></p> </p>
-            <p><i class="fa-sharp fa-solid fa-tag"></i>&nbsp;&nbsp; <span>Offers</span> </p>
-            <p><i class="fa-solid fa-cart-plus"></i>&nbsp;&nbsp; <span>Cart  <a href= "../Cart.html"></a></span> </p>
+        <div class="listVariety">
+            <p>Medicine</p>
+            <p>Lab Tests</p>
+            <p>
+                <select name="" id="">
+                    <option value="">Healthcare &nbsp;</option>
+                </select>
+            </p>
+            <p>Surgeries</p>
+            <p>Health Blogs</p>
+            <p>PLUS</p>
+            <p>Offers</p>
+            <p>Value Store</p>
         </div>
     </div>
-    <div class="listVariety">
-        <p>Medicine</p>
-        <p>Lab Tests</p>
-        <p>
-            <select name="" id="">
-                <option value="">Healthcare &nbsp;</option>
-            </select>
-        </p>
-        <p>Surgeries</p>
-        <p>Health Blogs</p>
-        <p>PLUS</p>
-        <p>Offers</p>
-        <p>Value Store</p>
-    </div>
+    
     <div class="address_location_bttm">
         <p> <span><i style="color: orange;" class="fa-solid fa-bolt-lightning"></i> &nbsp; </span> Express delivery to</p>
         <select name="" id="">
@@ -70,7 +73,7 @@
                     </div>
                 </div>
                 <div class="searchBarInput">
-                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span><i class="fa-solid fa-magnifying-glass" ></i></span>
                       <input type="text" placeholder="search for Medicines..">
                     <button>search</button>
                 </div>
@@ -84,13 +87,14 @@
 
             <!-- category section start -->
             <div class="ctgrySection">
-                <div class="ctgryWrapper">
+                <div class="ctgryWrapper"  onclick="window.location.href ='../productpage.html'">
                 <div class="ctrgryItems">
                     <img class="ctgryMedecine" src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0" alt="">
                     <div>
+                        
                         <h4>Medicine</h4>
                         <p>UPTO 20% OFF</p>
-                        <a href= "../productpage.html"></a>
+                       
                     </div>
                 </div>
                 <div class="ctrgryItems">
@@ -99,7 +103,6 @@
                         <h4>Lab Tests</h4>
                         <p>UPTO 70% OFF</p>
                     </div>
-                    <a href= "../productpage.html"></a>
                 </div>
                 <div class="ctrgryItems">
                     <img class="ctgryHealthCare" src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0" alt="">
@@ -107,22 +110,22 @@
                         <h4>Healthcare</h4>
                         <p>UPTO 60% OFF</p>
                     </div>
-                    <a href= "../productpage.html"></a>
+
                 </div>
                 <div class="ctrgryItems">
                     <img class="ctgrySysrgeries" src="https://assets.pharmeasy.in/apothecary/images/offers_1_ff.webp?dim=256x0" alt="">
                     <div>
                         <h4>Syrgeries</h4>
                     </div>
-                    <a href= "../productpage.html"></a>
+                  
                 </div>
-                <a href= "../productpage.html"></a>
+               
                 <div class="ctrgryItems">
                     <img class="ctgryHealthBlogs" src="https://assets.pharmeasy.in/apothecary/images/health_blogs_ff.webp?dim=256x0" alt="">
                     <div>
                         <h4>Health Blogs</h4>
                     </div>
-                    <a href= "../productpage.html"></a>
+                   
                 </div>
                 <div class="ctrgryItems">
                     <img class="ctgryPlus" src="https://assets.pharmeasy.in/apothecary/images/plus_ff.webp?dim=256x0" alt="">
@@ -130,14 +133,14 @@
                         <h4>PLUS</h4>
                         <p>SAVE 5% EXTRA</p>
                     </div>
-                    <a href= "../productpage.html"></a>
+                  
                 </div>
                 <div class="ctrgryItems">
                     <img class="ctgryOffers" src="https://assets.pharmeasy.in/apothecary/images/offers_ff.webp?dim=256x0" alt="">
                     <div>
                         <h4>Offers</h4>
                     </div>
-                    <a href= "../productpage.html"></a>
+                    
                 </div>
                 <div class="ctrgryItems">
                     <img class="ctgryValueStore" src="https://assets.pharmeasy.in/apothecary/images/value_store.png?dim=256x0" alt="">
@@ -145,7 +148,7 @@
                         <h4>Value Store</h4>
                         <p>UPTO 50% OFF</p>
                     </div>
-                    <a href= "../productpage.html"></a>
+                  
                 </div>
             </div>
             </div>
@@ -232,8 +235,8 @@
                         </div>
                         <div class="discOfferItens" id="discOffers_seeMore">
                             <i class="fa-solid fa-lock"></i>
-                            <div class="discTextNum">
-                                <p>Log in to view more offers <a href= "../loginpage.html"></a></p>
+                            <div class="discTextNum" onclick="window.location.href ='../loginpage.html'">
+                                <p>Log in to view more offers </p>
                             </div>
                         </div>
                     </div>
@@ -300,7 +303,7 @@
             <!-- orders with prescription section end -->
 
             <!-- shop by category section start -->
-            <div class="shopingCategorySection">
+            <div class="shopingCategorySection" onclick="window.location.href ='../productpage.html'">
                 <h3>Shop by Categories</h3>
                 <div class="shoppingWrapper">
                     <div class="shopingCategoryBox">
@@ -422,11 +425,11 @@
             <div class="newLaunchesContainer">
                 <h3>New Launches</h3>
                 <p>New wellness range just for you!</p>
-                <div class="prodctsWrapper">
-                    <div class="uniqueProductsWithPrice">
+                <div class="prodctsWrapper" onclick="window.location.href ='../productpage.html'">
+                    <div class= "uniqueProductsWithPrice">
                         <div class="prodImgdiv">
                             <img src="https://cdn01.pharmeasy.in/dam/products_otc/Q79438/liveasy-foods-sugarfree-chyavanposh-900-gms-gives-2x-immunity-boosts-energy-2-1678444685.jpg?dim=1440x0" alt="">
-                            <a href= "../productpage.html"></a>
+                            
                         </div>
                         <div class="prodPriceDiv">
                             <h3>Liveasy Foods Sugarfree..</h3>
@@ -437,7 +440,7 @@
                     <div class="uniqueProductsWithPrice">
                         <div class="prodImgdiv">
                             <img src="https://cdn01.pharmeasy.in/dam/products_otc/G53646/colgate-batman-anticavity-toothpaste-for-kids-80g-bubble-fruit-flavour-2-1674208601.jpg?dim=1440x0" alt="">
-                            <a href= "../productpage.html"></a>
+                           
                         </div>
                         <div class="prodPriceDiv">
                             <h3>Colgate Batman Anticavity Toothpast..</h3>
@@ -448,19 +451,19 @@
                     <div class="uniqueProductsWithPrice">
                         <div class="prodImgdiv">
                             <img src="https://cdn01.pharmeasy.in/dam/products_otc/C12659/himalaya-neem-and-turmeric-soap-125g-buy-3-get-1-free-2-1674204464.jpg?dim=1440x0" alt="">
-                            <a href= "../productpage.html"></a>
+                            
                         </div>
                         <div class="prodPriceDiv">
                             <h3>Himalya Neem And Turmeric Soap, 125g..</h3>
                             <h2>MRP <span>Rs.168</span></h2>
                             <p>Rs. 162.96<span>(3%)</span></p>
-                            <a href= "../productpage.html"></a>
+                         
                         </div>
                     </div>
                     <div class="uniqueProductsWithPrice">
                         <div class="prodImgdiv">
                             <img src="https://cdn01.pharmeasy.in/dam/products_otc/U48995/sensodyne-toothbrush-sensitive-manual-tooth-brush-with-soft-rounded-bristles-1-piece-color-may-vary-2-1674204521.jpg?dim=1440x0" alt="">
-                            <a href= "../productpage.html"></a>
+                            
                         </div>
                         <div class="prodPriceDiv">
                             <h3>Sensodyne Toothbrush: Sensitive...</h3>
@@ -471,31 +474,31 @@
                     <div class="uniqueProductsWithPrice">
                         <div class="prodImgdiv">
                             <img src="https://cdn01.pharmeasy.in/dam/products_otc/B73686/softovac-sf-constipation-powder-bottle-of-450-g-2-1672378583.jpg?dim=1440x0" alt="">
-                            <a href= "../productpage.html"></a>
+                          
                         </div>
                         <div class="prodPriceDiv">
                             <h3>Softovac Sf Constipation Powder</h3>
                             <h2>MRP <span>Rs.738</span></h2>
                             <p>Rs. 560.08<span>(24%)</span></p>
-                            <a href= "../productpage.html"></a>
+                            
                         </div>
                     </div>
                     <div class="uniqueProductsWithPrice">
                         <div class="prodImgdiv">
                             <img src="https://cdn01.pharmeasy.in/dam/products_otc/P03437/charmis-moisturising-cold-cream-58-ml-2-1671742979.jpg?dim=1440x0" alt="">
-                            <a href= "../productpage.html"></a>
+                           
                         </div>
                         <div class="prodPriceDiv">
                             <h3>Charmis Moistourising Cold Cream- 58 MI</h3>
                             <h2>MRP <span>Rs.95</span></h2>
                             <p>Rs. 89.30<span>(6%)</span></p>
-                            <a href= "../productpage.html"></a>
+                            
                         </div>
                     </div>
                     <div class="uniqueProductsWithPrice">
                         <div class="prodImgdiv">
                             <img src="https://cdn01.pharmeasy.in/dam/products_otc/P00852/nivea-deodorant-roll-on-pearl-beauty-for-women-50ml-2-1674196606.jpg?dim=1440x0" alt="">
-                            <a href= "../productpage.html"></a>
+                            
                         </div>
                         <div class="prodPriceDiv">
                             <h3>Nivea Deodorant Roll On, Pearl & Beauty fo...</h3>
@@ -505,31 +508,31 @@
                     <div class="uniqueProductsWithPrice">
                         <div class="prodImgdiv">
                             <img src="https://cdn01.pharmeasy.in/dam/products_otc/D44743/sunheal-ultra-matte-gel-sunscreen-spf-50-pa-50gm-2-1671258850.jpg?dim=1440x0" alt="">
-                        <a href= "../productpage.html"></a>
+                       
                         </div>
                         <div class="prodPriceDiv">
                             <h3>Sunheal Ultra Matte Gel Sunscreen Spf 50...</h3>
                             <h2>MRP <span>Rs.750</span></h2>
                             <p>Rs. 712.50<span>(5%)</span></p>
-                            <a href= "../productpage.html"></a>
+                            
                         </div>
                     </div>
                     <div class="uniqueProductsWithPrice">
                         <div class="prodImgdiv">
                             <img src="https://cdn01.pharmeasy.in/dam/products_otc/E89343/kesh-king-ayurvedic-anti-hairfall-hair-oil21-natural-ingredients-300-ml-2-1674196128.jpg?dim=1440x0" alt="">
-                            <a href= "../productpage.html"></a>
+                            
                         </div>
                         <div class="prodPriceDiv">
                             <h3>Kesh King Ayurvedic Anti Hairfall Hair Oil|2...</h3>
                             <h2>MRP <span>Rs.349</span></h2>
                             <p>Rs. 338.53<span>(3%)</span></p>
-                            <a href= "../productpage.html"></a>
+                            
                         </div>
                     </div>
                     <div class="uniqueProductsWithPrice">
                         <div class="prodImgdiv">
                             <img src="https://cdn01.pharmeasy.in/dam/products_otc/J82705/kapiva-ashwagandha-gold-capsules-helps-in-stress-management-100-ayurvedic-60-n-caps-2-1671743969.jpg?dim=1440x0" alt="">
-                            <a href= "../productpage.html"></a>
+                           
                         </div>
                         <div class="prodPriceDiv">
                             <h3>Kapiva Ashwagandhaa Gold Capsules Helps ...</h3>
@@ -541,7 +544,7 @@
             <!-- New Launches section end -->
 
             <!-- Trending Items section start -->
-            <div class="newLaunchesContainer">
+            <div class="newLaunchesContainer" onclick="window.location.href ='../productpage.html'">
                 <h3>Trending Near You</h3>
                 <p>Popular in your city</p>
                 <div class="prodctsWrapper">
@@ -659,38 +662,102 @@
                         </div>
                     </div>
                     <div class="imgConatiner">
-                        <div><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/923a665cc6f-Skin_care.png?dim=128x0" alt=""></div>
+                        <div><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/18d2e2ee86b-Vitamins.png?dim=128x0" alt=""></div>
                         <div class="imgTextConcern">
-                            <p>Skin Care</p>
+                            <p>Vitamins</p>
                         </div>
                     </div>
                     <div class="imgConatiner">
-                        <div><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/923a665cc6f-Skin_care.png?dim=128x0" alt=""></div>
+                        <div><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/0af9ac9f350-Diabetes.webp?dim=128x0" alt=""></div>
                         <div class="imgTextConcern">
-                            <p>Skin Care</p>
+                            <p>Diabetes Care & Sugar</p>
                         </div>
                     </div>
                     <div class="imgConatiner">
-                        <div><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/923a665cc6f-Skin_care.png?dim=128x0" alt=""></div>
+                        <div><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/24a0d2c733e-Heart.webp?dim=128x0" alt=""></div>
                         <div class="imgTextConcern">
-                            <p>Skin Care</p>
+                            <p>Cardiac Care</p>
                         </div>
                     </div>
                     <div class="imgConatiner">
-                        <div><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/923a665cc6f-Skin_care.png?dim=128x0" alt=""></div>
+                        <div><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/68369c9df98-Pregnancy.webp?dim=128x0" alt=""></div>
                         <div class="imgTextConcern">
-                            <p>Skin Care</p>
+                            <p>Baby & Mom Care</p>
                         </div>
                     </div>
                     <div class="imgConatiner">
-                        <div><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/923a665cc6f-Skin_care.png?dim=128x0" alt=""></div>
+                        <div><img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/26bbd7a9e98-Lifestyle.webp?dim=128x0" alt=""></div>
                         <div class="imgTextConcern">
-                            <p>Skin Care</p>
+                            <p>Lifestyle Disorders</p>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- shop by concern section end -->
+
+            <!-- Lab booking section start  -->
+            <div class="labBookParent">
+                <h3>Frequently Booked Lab Tests</h3>
+                <div class="difflabConatiner">
+                    <div class="singleLab">
+                        <p>63% OFF</p>
+                        <h4>Comprehensive Full Body Checkup with Vitamin D & B12</h4>
+                        <h3>Measures Vitamin D & B12 levels and other essential parameters</h3>
+                        <div class="pricWithImg">
+                            <div class="prc">
+                                <p>Rs 4199</p>
+                                <h3>Rs 1549</h3>
+                            </div>
+                            <div class="prcImg">
+                                <img src="https://s3.ap-south-1.amazonaws.com/pe-neon-public/diagnostics/production/recommendationWidget/4ff607383fad35e4af5639c3e7709734.png?dim=96x0" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="singleLab" style="background-color: #FAF4E5;">
+                        <p>65% OFF</p>
+                        <h4>Healthy 2023 Full Body Checkup</h4>
+                        <h3>Diagnostic tool for screening and monitoring of your health</h3>
+                        <div class="pricWithImg">
+                            <div class="prc">
+                                <p>Rs 2990</p>
+                                <h3>Rs 1049</h3>
+                            </div>
+                            <div class="prcImg">
+                                <img src="https://s3.ap-south-1.amazonaws.com/pe-neon-public/diagnostics/production/recommendationWidget/bc45ae15fcf13e7e8d2662e4aebce93c.png?dim=96x0" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="singleLab">
+                        <p>55% OFF</p>
+                        <h4>Diabetes Care</h4>
+                        <h3>Specially designed package to cover the preventive care aspects for diabetics</h3>
+                        <div class="pricWithImg">
+                            <div class="prc">
+                                <p>Rs 1099</p>
+                                <h3>Rs 499</h3>
+                            </div>
+                            <div class="prcImg">
+                                <img src="https://s3.ap-south-1.amazonaws.com/pe-neon-public/diagnostics/production/recommendationWidget/d07ea9125803379885f61b6c72ffd811.png?dim=96x0" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="singleLab" style="background-color: #FAF4E5;">
+                        <p>62% OFF</p>
+                        <h4>Basic Health Checkup</h4>
+                        <h3>Assesses health of 47 essential body parameters</h3>
+                        <div class="pricWithImg">
+                            <div class="prc">
+                                <p>Rs 2050</p>
+                                <h3>Rs 775</h3>
+                            </div>
+                            <div class="prcImg">
+                                <img src="https://s3.ap-south-1.amazonaws.com/pe-neon-public/diagnostics/production/recommendationWidget/01abb07c5b233f90b2cd0b64a7ebccee.png?dim=96x0" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Lab booking section end  -->
             
             <!-- footer section start  -->
             <div class="footerParent">
@@ -815,5 +882,6 @@ function filterdata(){
         userinfo = userInfohp
     }
 }
+
 </script>
 </html>

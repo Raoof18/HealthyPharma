@@ -30,7 +30,7 @@
                 <button><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp; <span>Download App</span> </button>
                 <p class="proLog" onclick="window.location.href ='../loginpage.html'"><i class="fa-regular fa-user" ></i>&nbsp;&nbsp; <span> Hello, Log in </span></p> </p>
                 <p><i class="fa-sharp fa-solid fa-tag"></i>&nbsp;&nbsp; <span>Offers</span> </p>
-                <p onclick="window.location.href ='../Cart.html'"><i class="fa-solid fa-cart-plus"></i>&nbsp;&nbsp; <span>Cart  </span> </p>
+                <p onclick="window.location.href ='../cartassite.html'"><i class="fa-solid fa-cart-plus"></i>&nbsp;&nbsp; <span>Cart  </span> </p>
             </div>
         </div>
         <div class="listVariety" onclick="window.location.href ='../Products.html'">
@@ -872,16 +872,6 @@
 
 </body>
 <script>
-var userInfohp = JSON.parse(localStorage.getItem("user-info")) || []
-document.querySelector("proLog").addEventListener("click", filterdata)
-
-function filterdata(){
-    var userinfo = document.querySelector("proLog").value
-
-    if(userInfohp != ""){
-        userinfo = userInfohp
-    }
-}
 
 </script>
 </html>

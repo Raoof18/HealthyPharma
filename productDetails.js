@@ -30,7 +30,7 @@ document.getElementById("viewCart").addEventListener("click",moveToCartPage)
 
 function moveToCartPage(){
     console.log("hii")
-    window.location.href="./cart.html";
+    window.location.href="./cartassite.html";
 }
 
 // move to cart

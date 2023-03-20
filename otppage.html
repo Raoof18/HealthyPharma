@@ -9,30 +9,33 @@
 </head>
 <body>
 	
-	<div class="loginbox">
+	<div class="loginbox" >
 		<form>
 			<div class="signuppagetop">
-				<a class="crossbutton" href="https://github.com/Raoof18/HealthyPharma/blob/main/Cart.html">X</a>
+				<a class="crossbutton" href="../homePage/index.html">X</a>
 					<img class="signuppagelogo", src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png?dim=256x0" alt="logo">
 					<img class="smalllogo", src="https://assets.pharmeasy.in/web-assets/dist/a1970e13.svg?dim=32x0" alt="smalllogo">
 					<h3 class="signupquicksmall">Quick Login / Register</h3>
 					<img class="signuppagerightimage", src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg?dim=256x0" alt="image">
 			</div>
 			<div class="userbox">
-			    <p class="signupquick">Enter OTP sent to +91</p>
+			    <p class="signupquick">Enter OTP sent to +918080808080</p>
 				<input class="signuppageplaceholder" type="number"  placeholder=""><input class="signuppageplaceholder" type="number"  placeholder=""><input class="signuppageplaceholder" type="number"  placeholder=""><input class="signuppageplaceholder" type="number"  placeholder="">
-            <div class="otpinfo">
-				<p>Change Number</p>
-                <p>Resend OTP</p>
+            <div class="otpinfo" >
+				<p onclick="window.location.href ='/loginpage.html'">Change Number</p>
+                <p onclick= "alert('Your OTP is 1234')">Resend OTP</p>
             </div>
-            </br>
-				<button class="sendotp">Continue</button>
-			<p class="signuppagelastline">By clicking continue, you agree with our <span class="colorchange">Privacy Policy</p>
+            </br  >
+				<button  onclick="window.location.href ='./homePage/index.html'" style=" width: 500px; height: 50px; font-family:Arial, Helvetica, sans-serif; font-weight: bold; font-size:17px;  border-radius: 5.5px; margin-top: 0.7cm; color: white; background-color: #10847e; border-color: white; border-style: solid;"> Continue </button>
+			<p class="signuppagelastline" onclick="window.location.href ='./homePage/index.html'">By clicking continue, you agree with our <span class="colorchange">Privacy Policy</p>
 			</div>
 		</div>
 		</form>
         <script>
-            
+			var dataarr = "8080808080";
+			localStorage.setItem("login-data", JSON.stringify(dataarr));
+			localStorage.setItem("user-data", JSON.stringify(dataarr));
+			
         </script>
 </body>
 </html>

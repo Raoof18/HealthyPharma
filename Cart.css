@@ -1,0 +1,127 @@
+.cart{
+    color: #a2a8ac;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    height: 600px;
+    width: 810px;
+}
+.home{
+    
+    margin-left: 20px;
+}
+
+.cart_home{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 650px;
+}
+.arrow, .cartname{
+    margin-top: -0.099px
+}
+.cart_box{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    
+    height: 330px;
+    width: 790px;
+}
+
+
+
+.cart_box_small{
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid;
+    width: 500px;
+    height: 300px;
+}
+.class_box_1{
+    color: #a2a8ac;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    width: 500px;
+    height: 80px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+.o_items{
+    margin-left: 10px;
+
+}
+.class_box_2{
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #a2a8ac;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 1px solid;
+    width: 485px;
+    height: 80px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+.class_box_3{
+   
+    width: 500px;
+    height: 140px;
+}
+.heart_save_for_later{
+    display: flex;
+    justify-content: space-between;
+}
+.checkout_box{
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid;
+    height: 160px;
+    width: 200px;
+}
+.cart_total{ padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 5px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    height: 60px;
+    border: 1px solid;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+.Proceed_to_Checkout{
+font-family:Arial, Helvetica, sans-serif;
+font-size:medium;
+height: 40px;
+border-radius: 7px;
+border: none;
+margin-left: 9%;
+margin-top: 35px;
+background-color: #d7dfe5;
+}
+.Select{
+    color: #10847e;
+}
+.cartpageimg{
+    margin-top: 2%;
+    margin-left: 38%;
+    height: 80px;
+    align-items: center;
+}
+.your{
+    text-align: center;
+    color: #a2a8ac;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.data{
+    margin-right: 5px;
+    color: #10847e;
+}
